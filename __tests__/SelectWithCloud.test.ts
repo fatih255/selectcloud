@@ -12,13 +12,14 @@ import SelectWithCloud from '../src/index';
 test('My Select Cloud', () => {
     // Set up our document body
     document.body.innerHTML =
-        '<div>' +
+        '<div class="cloud-selection-box">' +
         '  <h1 class="note">item1</h1>' +
         '  <h1 class="note">item1</h1>' +
         '  <h1 class="note">item1</h1>' +
         '</div>';
     SelectWithCloud({
-        itemsClass: 'note',
+        itemsClass: "note",
+        containerClass: "cloud-selection-box",
         onComplete: (elements) => {
             console.log(elements);
         },
