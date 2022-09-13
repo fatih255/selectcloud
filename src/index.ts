@@ -80,7 +80,7 @@ export default function SelectWithCloud({
 			cloudSelection.style.width = e.clientX - startPosition.x + "px";
 		}
 		if (e.clientY < startPosition.y) {
-			console.log(window.scrollY);
+			
 			cloudSelection.style.top = e.clientY + window.scrollY + "px";
 			cloudSelection.style.height =
 				scrollingYPX + startPosition.y - e.clientY + "px";
