@@ -156,7 +156,7 @@ export default function SelectWithCloud({
 
 		document.documentElement.draggable = true;
 		document.documentElement.style.userSelect = "all";
-		//	cloudSelection.setAttribute("style", "");
+		// cloudSelection.setAttribute("style", "");
 		onComplete(intersectionsNotes);
 		container.removeEventListener("mousemove", mouseMoveHandler);
 	};
