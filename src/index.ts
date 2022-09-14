@@ -161,8 +161,8 @@ export default function SelectWithCloud({
 		container.removeEventListener("mousemove", mouseMoveHandler);
 	};
 	const mouseLeaveHandler = (e: MouseEvent) => {
-		//	cloudSelection.setAttribute("style", "");
-		//	container.removeEventListener("mousemove", mouseMoveHandler);
+		// cloudSelection.setAttribute("style", "");
+		// container.removeEventListener("mousemove", mouseMoveHandler);
 	};
 
 	container.addEventListener("mousedown", mouseDownHandler);
