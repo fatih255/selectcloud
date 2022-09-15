@@ -122,7 +122,7 @@ export default function SelectWithCloud({ itemsClass, containerClass, cloudStyle
 
       document.documentElement.draggable = true;
       document.documentElement.style.userSelect = 'auto';
-      cloudSelection.setAttribute('style', '');
+      cloudSelection.setAttribute('style', 'position:absolute;');
       onComplete(intersectionsNotes);
       container.removeEventListener('mousemove', mouseMoveHandler);
     };
