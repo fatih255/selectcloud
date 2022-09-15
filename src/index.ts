@@ -4,7 +4,7 @@ type Props = {
   cloudStyle?: string;
   crossEffect: ({ style, classList }: { style: CSSStyleDeclaration; classList: DOMTokenList }) => void;
   onComplete: (elements?: Element[]) => void;
-  selectable: boolean;
+  selectable?: boolean;
 };
 
 let runnedSelectWithCloud = false;
@@ -18,7 +18,7 @@ export default function SelectWithCloud({
   cloudStyle,
   crossEffect,
   onComplete,
-  selectable,
+  selectable = true,
 }: Props) {
   if (!runnedSelectWithCloud) {
     const container = document.querySelector(`.${containerClass}`) as HTMLElement;
@@ -116,10 +116,9 @@ export default function SelectWithCloud({
       });
       cloudSelection.setAttribute(
         'style',
-        `position:absolute; ${
-          cloudStyle
-            ? cloudStyle
-            : 'background:rgb(9, 113, 241,.2) ;  border-radius:5px;border: 2px solid rgb(9, 113, 241,.4)'
+        `position:absolute; ${cloudStyle
+          ? cloudStyle
+          : 'background:rgb(9, 113, 241,.2) ;  border-radius:5px;border: 2px solid rgb(9, 113, 241,.4)'
         }`,
       );
 
