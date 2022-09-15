@@ -15,6 +15,7 @@ export default function SelectWithCloud({ itemsClass, containerClass, cloudStyle
     container.draggable = false;
     const cloudSelection = document.createElement('div') as HTMLDivElement;
     cloudSelection.draggable = false;
+    cloudSelection.style.position = 'absolute';
     container.append(cloudSelection);
 
     let intersectionsNotes: Element[] = [];
