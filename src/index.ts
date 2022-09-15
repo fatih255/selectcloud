@@ -116,9 +116,10 @@ export default function SelectWithCloud({
       });
       cloudSelection.setAttribute(
         'style',
-        `position:absolute; ${cloudStyle
-          ? cloudStyle
-          : 'background:rgb(9, 113, 241,.2) ;  border-radius:5px;border: 2px solid rgb(9, 113, 241,.4)'
+        `position:absolute; ${
+          cloudStyle
+            ? cloudStyle
+            : 'background:rgb(9, 113, 241,.2) ;  border-radius:5px;border: 2px solid rgb(9, 113, 241,.4)'
         }`,
       );
 
