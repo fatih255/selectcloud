@@ -6,10 +6,11 @@
         "declaration": true,
         "outDir": "./lib",
         "strict": true,
-        "allowSyntheticDefaultImports":true
+        "allowSyntheticDefaultImports": true
     },
     "include": [
-        "src"
+        "src",
+        "preview/ReactTest.tsx"
     ],
     "exclude": [
         "node_modules",
