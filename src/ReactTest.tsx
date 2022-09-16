@@ -35,7 +35,7 @@ export default class ReactTest extends React.Component<Props, State> {
 							classList.add("test");
 						},
 						onComplete: (elements) => {
-							//	console.log(elements);
+							// console.log(elements);
 						}
 					}}>
 					<div
