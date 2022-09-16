@@ -10,15 +10,19 @@ type State = {
 };
 
 
-export default class ReactTest extends React.Component<Props, State>{
+export default class ReactTest extends React.Component<Props, State> {
 	constructor(props: Props) {
 		super(props);
 		this.state = {
 			selectable: true
 		};
+		this.handleChangeSelectable = this.handleChangeSelectable.bind(this);
 	}
-
+	handleChangeSelectable(value: boolean) {
+		this.setState({ selectable: value });
+	}
 	render() {
+	
 		return (
 			<div>
 				<SelectCloud
@@ -89,4 +93,4 @@ export default class ReactTest extends React.Component<Props, State>{
 	}
 }
 
-render(<ReactTest />, document.getElementById("root"));
+// render(<ReactTest />, document.getElementById("root"));
