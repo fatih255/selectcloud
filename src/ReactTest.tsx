@@ -3,6 +3,7 @@ import { render } from "react-dom";
 import SelectCloud from ".";
 import { clean } from "./SelectCloudWorker";
 
+
 type Props = {};
 
 type State = {
@@ -21,49 +22,49 @@ class ReactTest extends React.Component<Props, State> {
         return (
             <div>
                 <SelectCloud
-                selectable={this.state.selectable}
-                options={{
-                    itemsClass: "note",
-                    containerClass: "cloud-selection-box",
-                    crossEffect: ({ style, classList }) => {
-                        style.color = "yellow";
-                        classList.add("test");
-                    },
-                    onComplete: (elements) => {
-                        //	console.log(elements);
-                    }
-                }}>
-                <div
-                    style={{
-                        height: 200,
-                        background: "yellow"
-                    }}></div>
-                <div
-                    style={{ marginLeft: 50, marginRight: 50 }}
-                    className="cloud-selection-box">
-                    <h1 style={{ width: 100, backgroundColor: "red" }} className="note">
-                        item1
-                    </h1>
-                    <h1 style={{ width: 100, backgroundColor: "red" }} className="note">
-                        item2
-                    </h1>
-                    <h1 style={{ width: 100, backgroundColor: "red" }} className="note">
-                        item3
-                    </h1>
-                    <h1 style={{ width: 100, backgroundColor: "red" }} className="note">
-                        item4
-                    </h1>
-                    <h1 style={{ width: 100, backgroundColor: "red" }} className="note">
-                        item5
-                    </h1>
-                    <h1 style={{ width: 100, backgroundColor: "red" }} className="note">
-                        item6
-                    </h1>
-                    <h1 style={{ width: 100, backgroundColor: "red" }} className="note">
-                        item7
-                    </h1>
-                </div>
-            </SelectCloud>
+                    selectable={this.state.selectable}
+                    options={{
+                        itemsClass: "note",
+                        containerClass: "cloud-selection-box",
+                        crossEffect: ({ style, classList }) => {
+                            style.color = "yellow";
+                            classList.add("test");
+                        },
+                        onComplete: (elements) => {
+                            //	console.log(elements);
+                        }
+                    }}>
+                    <div
+                        style={{
+                            height: 200,
+                            background: "yellow"
+                        }}></div>
+                    <div
+                        style={{ marginLeft: 50, marginRight: 50 }}
+                        className="cloud-selection-box">
+                        <h1 style={{ width: 100, backgroundColor: "red" }} className="note">
+                            item1
+                        </h1>
+                        <h1 style={{ width: 100, backgroundColor: "red" }} className="note">
+                            item2
+                        </h1>
+                        <h1 style={{ width: 100, backgroundColor: "red" }} className="note">
+                            item3
+                        </h1>
+                        <h1 style={{ width: 100, backgroundColor: "red" }} className="note">
+                            item4
+                        </h1>
+                        <h1 style={{ width: 100, backgroundColor: "red" }} className="note">
+                            item5
+                        </h1>
+                        <h1 style={{ width: 100, backgroundColor: "red" }} className="note">
+                            item6
+                        </h1>
+                        <h1 style={{ width: 100, backgroundColor: "red" }} className="note">
+                            item7
+                        </h1>
+                    </div>
+                </SelectCloud>
                 <button onClick={() => this.setState({ selectable: true })}>
                     selectable
                 </button>
