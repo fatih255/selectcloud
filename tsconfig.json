@@ -6,6 +6,7 @@
         "declaration": true,
         "outDir": "./lib",
         "strict": true,
+        "allowJs":true,
         "allowSyntheticDefaultImports": true
     },
     "include": [
