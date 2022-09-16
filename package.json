@@ -1,6 +1,6 @@
 {
   "name": "select-cloud",
-  "version": "1.0.25",
+  "version": "1.0.26",
   "description": " Select Cloud Package",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
