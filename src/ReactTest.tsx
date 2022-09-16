@@ -31,7 +31,7 @@ export default class ReactTest extends React.Component<Props, State> {
                             classList.add("test");
                         },
                         onComplete: (elements) => {
-                            //	console.log(elements);
+                            // console.log(elements);
                         }
                     }}>
                     <div
@@ -82,7 +82,7 @@ export default class ReactTest extends React.Component<Props, State> {
                         newitem.classList.add("note");
                         newitem.style.width = 100 + "px";
                         newitem.style.backgroundColor = "red";
-                        selectionbox && selectionbox.append(newitem);
+                        if (selectionbox) selectionbox.append(newitem);
                     }}>
                     add Item
                 </button>
