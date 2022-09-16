@@ -9,7 +9,7 @@ type State = {
   selectable: boolean;
 };
 
-export default class ReactTest extends React.Component<Props, State>{
+export default class ReactTest extends React.Component<Props, State> {
   constructor(props: Props) {
     super(props);
     this.state = {
