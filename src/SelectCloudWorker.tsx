@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 type onComplete = {
-  getAttributes: (attributeName: string) => any[] ;
+  getAttributes: (attributeName: string) => any[];
   elements: Element[];
 };
 export type CloudProps = {
