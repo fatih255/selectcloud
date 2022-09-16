@@ -30,7 +30,7 @@ export default class ReactTest extends React.Component<Props, State> {
       await fetch(`${APIBASE_URL}/todos`, { method: "GET" })
     ).json();
     this.setState({
-      todos: todos
+      todos: [...todos]
     });
   }
 
@@ -49,7 +49,7 @@ export default class ReactTest extends React.Component<Props, State> {
               classList.add("test");
             },
             onComplete: ({ getAttributes, elements }) => {
-              console.log(getAttributes("data-id"));
+              // console.log(getAttributes("data-id"));
             }
           }}>
           <div

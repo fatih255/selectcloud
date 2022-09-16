@@ -15,7 +15,7 @@ export default class SelectCloud extends Component<Props, State> {
 					return;
 				}
 				if (mutation.type === "childList") {
-					console.log("test");
+					// console.log("test");
 					const childNode = mutationList[0].target as HTMLElement;
 					if (childNode) {
 						haveitem =
