@@ -6,11 +6,11 @@ export default class SelectCloud extends Component<Props, State> {
 		selectable: true
 	};
 	componentDidMount() {
-		const observer = new MutationObserver((mutationList, observer) => {
+		const observer = new MutationObserver((mutationList, o) => {
 			let haveitem = false;
 			for (const mutation of mutationList) {
 				if (haveitem) {
-					observer.disconnect();
+					o.disconnect();
 					this.setState({ haveNode: true });
 					return;
 				}
