@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 type onComplete = {
-  getAttributes: (attributeName: string) => any[] | object;
+  getAttributes: (attributeName: string) => any[] ;
   elements: Element[];
 };
 export type CloudProps = {
@@ -156,7 +156,7 @@ export default class SelectCloudWorker extends React.Component<CloudProps, State
             (prev: any, current: any) => [...prev, current.getAttribute(attributeName)],
             [],
           ) as any[];
-          return attrs.every((a) => a !== null) ? attrs : { error: 'attributes not found' };
+          return attrs.every((a) => a !== null) ? attrs : [];
         },
         elements: intersectionsNotes,
       });
