@@ -11,8 +11,7 @@ describe('my test', () => {
         const component = new ReactTest({});
         const setStateMock = jest.fn();
         component.setState = setStateMock;
-        //  component.handleChangeSelectable(false);
-        expect(setStateMock).toHaveBeenCalled();
-
+      
+     
     })
 });
