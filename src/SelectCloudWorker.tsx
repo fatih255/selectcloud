@@ -196,13 +196,13 @@ export default class SelectCloudWorker extends React.Component<
 
 				if (target.parentNode) {
 					const parentNode = target.parentNode as HTMLElement;
-					const isnotselectable =
+					const isParentnotselectable =
 						this.props.options.notSelectableClasses &&
 						parentNode?.getAttribute("class") &&
 						this.props.options.notSelectableClasses.includes(
 							parentNode?.getAttribute("class") as string
 						);
-					if (isnotselectable) return;
+					if (isParentnotselectable) return;
 				}
 			}
 
