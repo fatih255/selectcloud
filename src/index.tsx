@@ -7,7 +7,7 @@ export default class SelectCloud extends Component<Props, State> {
 	};
 	componentDidMount() {
 		const observer = new MutationObserver((mutationList, o) => {
-			let haveitem = mutationList
+			const haveitem = mutationList
 				.filter((m) => m.type === "childList")
 				.reduce((prev: any, next: any) => [...prev, next.addedNodes], [])
 				.some((m) =>
