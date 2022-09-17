@@ -123,4 +123,4 @@ export default class ReactTest extends React.Component<Props, State> {
   }
 }
 
-render(<ReactTest />, document.getElementById('root'));
+// render(<ReactTest />, document.getElementById('root'));
