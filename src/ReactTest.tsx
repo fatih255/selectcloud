@@ -76,7 +76,9 @@ export default class ReactTest extends React.Component<Props, State> {
 											height: 100,
 											background: "yellow"
 										}}>
-										<button onClick={() => console.log("clicked")}>test</button>
+										<button onClick={() => {
+                      // console.log("clicked")
+                    }}>test</button>
 									</div>
 								</div>
 							))}
