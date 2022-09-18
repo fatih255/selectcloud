@@ -1,7 +1,10 @@
+<a href="https://www.npmjs.com/package/select-cloud">
+<img width="140" src="https://user-images.githubusercontent.com/52957100/190910518-b0197d38-4edb-4f32-a5b1-0556cba8c572.jpg"/>
+</a>
+
 # Select Cloud Package Introduction
-
 This package is an easy to use library that allows us to make multiple selections with the mouse and returns the selected HTMLElements as an array and allows us to add classes and styles to these HTMLElements.
-
+- Instaltion ``` npm i select-cloud ```
 # Tips
 - This package supports asynchronous children.
 - If you have a clickable area in any HTML Element you specify, you can turn off the selection feature in these areas.(with notSelectableClasses prop)
@@ -42,18 +45,18 @@ This package is an easy to use library that allows us to make multiple selection
 # Props
 | Prop  |  Type | Definition |
 | ------------- | ------------- |------------- |
-| ```selectable``` | ```selectable: boolean```  | Enables or disables the ability to select. It is true by default. |
-| ```loadingComponent``` | JSX.Element | If your selection items is created with asynchronous, you can provide a loading component until your child is ready. |
+| selectable | boolean  | Enables or disables the ability to select. It is true by default. |
+| loadingComponent | JSX.Element | If your selection items is created with asynchronous, you can provide a loading component until your child is ready. |
 - Options Props:
 
 | Prop  |  Type | Definition |
 | ------------- | ------------- |------------- |
-| ```itemsClass```  | ```string```  | The class attribute of the HTML Elements to be selected.  |
-| ```containerClass```  | ```string``` | HTMLElement class attribute where selection can be made |
-| ```notSelectableClasses```  | ```string , string[]```  | HTMLElement class property on which selection property is turned off |
-| ```crossEffect```  |  ```({style:CSSStyleDeclaration,classList:DOMTokenList})=>void``` | Adds design features to selected HTMLElements |
-| ```onComplete```  | ```({getAttributes:(attributeName: string) => any[],elements: Element[]})=>void``` | When mouse up trigger this function and return array of selected HTMLElement |
-| ```cloudStyle``` | ```string``` | You can change cloud selection square style with write CSS. By default, its own style is used. |
+| itemsClass  | string  | The class attribute of the HTML Elements to be selected.  |
+| containerClass  | string | HTMLElement class attribute where selection can be made |
+| notSelectableClasses  | string , string[]  | HTMLElement class property on which selection property is turned off |
+| crossEffect  |  ({style:CSSStyleDeclaration,classList:DOMTokenList})=>void | Adds design features to selected HTMLElements |
+| onComplete  | ({getAttributes:(attributeName: string) => any[],elements: Element[]})=>void | When mouse up trigger this function and return array of selected HTMLElement |
+| cloudStyle | string | You can change cloud selection square style with write CSS. By default, its own style is used. |
 
 
 
